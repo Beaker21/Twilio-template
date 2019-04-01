@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Our Phone Texting App</title>
+</head>
+<body>
+  <h1>Hi from our Flask app!</h1>
+  <form action="{{url_for('send_sms')}}" method="POST">
+    <input type="phone" name="phone" placeholder="Enter a phone number">
+    <input type="text" name="message" placeholder="Enter a Message">
+    <button type="submit">Send Message via Text</button>
+  </form>
+</body>
+</html>
